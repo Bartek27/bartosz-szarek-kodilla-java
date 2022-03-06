@@ -25,6 +25,7 @@ public class CollectionTestSuite {
         ArrayList<Integer> myList = new ArrayList<>();
 
         //When
+
         ArrayList<Integer> resultList = (ArrayList<Integer>) oddNumbersExterminator.exterminate(myList);
 
         //Then
