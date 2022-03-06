@@ -1,8 +1,15 @@
 package com.kodilla.stream;
 
+import com.kodilla.stream.beautifier.PoemBeautifier;
+
 public class StreamMain {
 
     public static void main(String[] args) {
-        System.out.println("Welcome to module 7 - Stream");
+        PoemBeautifier beautifier = new PoemBeautifier();
+
+        beautifier.beautify("example text", text -> text.toUpperCase());
+        beautifier.beautify("another text", text -> text.replace('t', 'T'));
+        beautifier.beautify("one more time", text -> "".concat("ABC   ").concat(text).concat("  CBA"));
+
     }
 }
